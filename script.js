@@ -5,16 +5,17 @@ var alturaDaTela = innerHeight;
 function setup() {
     createCanvas(larguraDaTela, alturaDaTela);
     print(alturaDaTela)
-
   }
   
   function draw() {
     background(0);
     criaPapelDeJogo();
     criaDivisoriaNoPapel();
+    mouseClickado1();
   }
 
   function criaPapelDeJogo() {
+    fill(255)
     rect(larguraDaTela/2-600, alturaDaTela/2-300, 1200, 600);
   }
   function criaDivisoriaNoPapel() {
